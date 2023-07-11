@@ -1,0 +1,78 @@
+.container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+input, select, button {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#registrationMessage, #loginMessage {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.warning-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 24px;
+  font-weight: bold;
+  color: red;
+  text-align: center;
+}
+
+/* Стили для блока authorizedPage */
+#authorizedPage {
+  display: block;
+}
+
+/* CSS */
+
+/* Добавьте стили для выпадающего списка стран */
+.country-dropdown {
+  position: relative;
+}
+
+.country-dropdown input {
+  width: 100%;
+  
+}
+
+.country-dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  max-height: 200px;
+  overflow-y: auto;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.country-dropdown-list li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.country-dropdown-list li:hover {
+  background-color: #f2f2f2;
+}

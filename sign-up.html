@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Регистрация</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div id="registration" class="container">
+    <h2>Регистрация</h2>
+    <form id="registrationForm">
+      <input type="text" id="registrationFirstNameInp" placeholder="Имя" required>
+      <input type="text" id="registrationLastNameInp" placeholder="Фамилия" required>
+      <input type="email" id="registrationEmailInp" placeholder="Email" required>
+      <input type="password" id="registrationPasswordInp" placeholder="Пароль" required>
+      <input type="text" id="registrationCompanyInp" placeholder="Название компании" required>
+      <!-- HTML -->
+
+<!-- Замените поле registrationCountryInp на следующий код -->
+<div class="form-group">
+  <div class="country-dropdown">
+    <input required type="text" id="registrationCountryInp" class="form-control" placeholder="Введите страну" autocomplete="off">
+    <ul id="countryDropdownList" class="country-dropdown-list"></ul>
+  </div>
+</div>
+
+      <input type="tel" id="registrationPhoneInp" placeholder="Номер телефона" required>
+      <label style="cursor: pointer;" for="agreementChkbox">
+        <input style="width: auto; display: inline; cursor: pointer;" type="checkbox" id="agreementChkbox" required> Согласен с правилами
+      </label>
+      <button type="submit" id="registrationSignUpBtn">Зарегистрироваться</button>
+    </form>
+    <p id="registrationMessage"></p>
+<a href="login.html">Войти</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
